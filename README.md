@@ -12,7 +12,9 @@ Please note that using this plugin requires your project has `aws-amplify` (not 
 
 ### Peer Dependencies Motivation
 
-_Your_ instance of `Amplify` must be configured correctly.
+DraftJS has peer dependencies on `react` and `react-dom`. Additionally, to successfully use hooks, [the `react` import from your application code needs to resolve to the same module as the react import from inside the `react-dom` package](https://reactjs.org/warnings/invalid-hook-call-warning.html#duplicate-react).
+
+Since the `Amplify` module installed in your `node_modules` is correctly configured (using `Amplify.configure()`), this library hooks directly into that configuration via the `peerDependency`.
 
 ### Amplify Configuration
 
