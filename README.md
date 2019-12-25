@@ -10,7 +10,7 @@ It is heavily inspired by the [draft-js-image-plugin](https://www.draft-js-plugi
 
 Please note that using this plugin requires your project has `aws-amplify` (not `@aws-amplify/storage`), `react` and `react-dom` packages installed.
 
-### Peer Dependencies Motivation
+#### Peer Dependencies Motivation
 
 DraftJS has peer dependencies on `react` and `react-dom`. Additionally, to successfully use hooks, [the `react` import from your application code needs to resolve to the same module as the react import from inside the `react-dom` package](https://reactjs.org/warnings/invalid-hook-call-warning.html#duplicate-react).
 
