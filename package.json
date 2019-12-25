@@ -9,7 +9,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --env=jsdom --passWithNoTests",
+    "test": "CI=true tsdx test --env=jsdom --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build"
   },
@@ -30,8 +30,12 @@
     "trailingComma": "es5"
   },
   "name": "draft-js-aws-amplify-s3-plugin",
-  "author": "Aryan Jabbari",
+  "author": "Aryan Jabbari <AryanJabbari@gmail.com> (https://www.thewebdevcoach.com)",
   "module": "dist/draft-js-aws-amplify-s3-plugin.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AryanJ-NYC/draft-js-aws-amplify-s3-plugin.git"
+  },
   "devDependencies": {
     "@types/draft-js": "^0.10.37",
     "@types/jest": "^24.0.24",
