@@ -11,7 +11,6 @@ const S3Image: React.FunctionComponent<S3ImageProps> = ({
   useEffect(() => {
     const getS3Url = async () => {
       const url = (await Storage.get(s3Key)) as string;
-      console.log({ url });
       setS3Url(url);
     };
     getS3Url();
