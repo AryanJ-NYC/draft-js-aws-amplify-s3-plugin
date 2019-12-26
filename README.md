@@ -8,7 +8,7 @@ It is heavily inspired by the [draft-js-image-plugin](https://www.draft-js-plugi
 
 ### Peer Dependencies
 
-Please note that using this plugin requires your project has `aws-amplify` (not `@aws-amplify/storage`), `react` and `react-dom` packages installed.
+Please note that using this plugin requires your project has `aws-amplify` (not `@aws-amplify/storage`), `draft-js`, `react` and `react-dom` packages installed.
 
 #### Peer Dependencies Motivation
 
@@ -23,6 +23,7 @@ This plugin assumes you've successfully [configured AWS `Amplify`](https://aws-a
 ## Example Usage
 
 ```typescript
+import { Storage } from 'aws-amplify';
 import { EditorState } from 'draft-js';
 import Editor from 'draft-js-plugins-editor';
 import createImagePlugin from 'draft-js-aws-amplify-s3-plugin';
