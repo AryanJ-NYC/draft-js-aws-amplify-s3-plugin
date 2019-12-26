@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -15,6 +15,7 @@
   },
   "peerDependencies": {
     "aws-amplify": ">=2",
+    "draft-js": ">=0.11.0",
     "react": ">=16",
     "react-dom": ">=16"
   },
@@ -50,8 +51,5 @@
     "tsdx": "^0.12.0",
     "tslib": "^1.10.0",
     "typescript": "^3.7.4"
-  },
-  "dependencies": {
-    "draft-js": "^0.11.3"
   }
 }
