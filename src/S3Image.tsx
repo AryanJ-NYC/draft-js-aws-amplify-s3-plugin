@@ -15,7 +15,7 @@ const S3Image: React.FunctionComponent<S3ImageProps> = ({
     };
     getS3Url();
   }, [s3Key]);
-  return <img src={s3Url} />;
+  return <img src={s3Url} alt="Uploaded" />;
 };
 type S3ImageProps = {
   block: ContentBlock;
