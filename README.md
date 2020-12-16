@@ -26,7 +26,7 @@ This plugin assumes you've successfully [configured AWS `Amplify`](https://aws-a
 import { Storage } from 'aws-amplify';
 import { EditorState } from 'draft-js';
 import Editor from 'draft-js-plugins-editor';
-import createImagePlugin from 'draft-js-aws-amplify-s3-plugin';
+import createS3Plugin from 'draft-js-aws-amplify-s3-plugin';
 import React from 'react';
 
 const s3Plugin = createS3Plugin();
